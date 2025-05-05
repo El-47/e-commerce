@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header';
 import { getCurrentSession } from '@/actions/auth';
 import { SanityLive } from '@/sanity/lib/live';
 import HeaderCategorySelector from '@/components/layout/HeaderCategorySelector';
-import Cart from '@/components/cart/Cart';
+import Cart from '@/components/cart/Cart'; 
 import Script from 'next/script';
 import { Suspense } from 'react';
 import AnalyticsTracker from '@/components/layout/AnalyticsTracker';
@@ -36,7 +36,7 @@ const RootLayout = async ({
                     data-website-id='(YOUR UMAMI WEBSITE ID)'
                     strategy='beforeInteractive'
                 />
-
+                
                 <Suspense>
                     <AnalyticsTracker
                         user={user}
@@ -45,7 +45,7 @@ const RootLayout = async ({
 
                 {children}
 
-                <Cart />
+                <Cart /> 
                 <SanityLive />
             </body>
         </html>

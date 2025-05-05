@@ -1,7 +1,7 @@
 'use client';
 import { logoutUser } from '@/actions/auth';
 import HeaderSearchBar from '@/components/layout/HeaderSearchBar';
-import { useCartStore } from '@/stores/cart-store';
+import { useCartStore } from '@/stores/cart-store'; 
 import { User } from '@prisma/client';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
