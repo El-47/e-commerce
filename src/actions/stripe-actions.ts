@@ -5,7 +5,7 @@ import { getOrCreateCart } from '@/actions/cart-actions';
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: '2025-04-30.basil'
+    apiVersion: '2024-12-18.acacia'
 });
 
 export const createCheckoutSession = async (cartId: string) => {
