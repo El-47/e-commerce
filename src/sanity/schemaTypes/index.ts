@@ -1,4 +1,4 @@
-/* import { order, orderItem, shippingAddress } from '@/sanity/schemaTypes/schemas/order' */
+import { order, orderItem, shippingAddress } from '@/sanity/schemaTypes/schemas/order' 
 import { product } from './schemas/product'
 import { productCategory } from './schemas/product-category'
 import { promotionCampaign } from './schemas/promotion-campaign'
@@ -13,10 +13,9 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     
     productCategory,
     product,
-    /*
+
     shippingAddress,
     orderItem,
     order,
-    */
   ],
 }
