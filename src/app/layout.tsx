@@ -8,7 +8,7 @@ import HeaderCategorySelector from '@/components/layout/HeaderCategorySelector';
 import Cart from '@/components/cart/Cart'; 
 import Script from 'next/script';
 import { Suspense } from 'react';
-import AnalyticsTracker from '@/components/layout/AnalyticsTracker';
+import AnalyticsTracker from '../components/layout/AnalyticsTracker';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,7 +33,7 @@ const RootLayout = async ({
                 />
                 <Script
                     src='https://cloud.umami.is/script.js'
-                    data-website-id='(YOUR UMAMI WEBSITE ID)'
+                    data-website-id='d60b023d-9012-4b12-a25c-fcc40cd5a952'
                     strategy='beforeInteractive'
                 />
                 
@@ -53,3 +53,4 @@ const RootLayout = async ({
 };
 
 export default RootLayout;
+
