@@ -82,9 +82,3 @@ This project was developed as a comprehensive e-commerce solution, drawing inspi
 * **Content Management (Sanity CMS):** Easy management of product information and website content through a headless CMS.
 * **Responsive Design:** Ensures the website adapts to different screen sizes (desktops, tablets, mobile devices).
 
-
-Please ensure your code adheres to the project's coding standards and includes appropriate testing.
-
-## License
-
-[Specify your project's license here, e.g., MIT License]
