@@ -10,15 +10,9 @@ const Home = async () => {
 
     const products = await getAllProducts();
 
-    const { randomProducts, winningIndex } = await getWheelOfFortuneConfiguration();
-
     return (
         <div>
           <SalesCampaignBanner />
-          <WheelOfFortune
-            products={randomProducts}
-            winningIndex={winningIndex}
-          />
 
           <section className='container mx-auto py-8'>
             <ProductGrid products={products} />

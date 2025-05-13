@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { useShallow } from 'zustand/shallow';
+import { useWheelStore } from '@/stores/wheel-store';
 
 const AnnouncementBar = () => {
     return (
@@ -35,6 +36,8 @@ const Header = ({ user, categorySelector }: HeaderProps) => {
             getTotalItems: state.getTotalItems
         }))
     );
+
+    const { openWheel } = useWheelStore();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -79,9 +82,13 @@ const Header = ({ user, categorySelector }: HeaderProps) => {
                             </nav>
                         </div>
 
-                        <Link href='#' className='absolute left-1/2 -translate-x-1/2'>
-                            <span className='text-xl sm:text-2xl font-bold tracking-tight'>DEAL</span>
-                        </Link>
+                        <button
+                            onClick={openWheel} 
+                            className='absolute left-1/2 -translate-x-1/2 text-xl sm:text-2xl font-bold tracking-tight'
+                        >
+                            Spin The Wheel
+                        </button>
+
 
                         <div className='flex flex-1 justify-end items-center gap-2 sm:gap-4'>
                             <HeaderSearchBar />

@@ -9,7 +9,10 @@ import Cart from '@/components/cart/Cart';
 import Script from 'next/script';
 import { Suspense } from 'react';
 import AnalyticsTracker from '../components/layout/AnalyticsTracker';
+import WheelOfFortuneWrapper from '@/components/layout/WheelOfFortuneWrapper';
+import { useWheelStore } from '@/stores/wheel-store';
 
+import ClientWrapper from '@/components/layout/ClientWrapper';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -41,6 +44,7 @@ const RootLayout = async ({
                     <AnalyticsTracker
                         user={user}
                     />
+                    <ClientWrapper />
                 </Suspense>
 
                 {children}
